@@ -1,0 +1,13 @@
+mongo:
+  image: mongo
+  ports:
+    - "27017:27017"
+  restart: always
+web:
+  build:
+  volumes:
+  - ./:/app
+  ports:
+    -"5050:5050"
+  links:
+    - mongo
