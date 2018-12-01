@@ -5,7 +5,7 @@ services:
     restart: always
     build: .
     ports:
-      - '80:5050'
+      - '81:5050'
     links:
       - mongo
   mongo: 
